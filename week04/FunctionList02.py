@@ -1,4 +1,4 @@
-capacity = 10                        # 전역 변수
+capacity = 5                        # 전역 변수
 array = [None]*capacity              # 전역 변수
 size = 0                             # 전역 변수
 
@@ -9,17 +9,52 @@ def isFull():
 def insert():
     global size  # size는 전역변수
     if not isFull():
-        print("3) 현재의 size와 capacity의 값은 같은가?", isFull())         
         size += 1  # size변수의 값에 +1
-        print("4) 현재의 size 변수의 값은? ", size)         
     else:
         print("리스트 overflow 또는 유효하지 않은 삽입 위치")
         exit()
 
 # 프로그램의 시작
 if __name__ == "__main__":
-    print("1) 현재 size 변수의 값은 ? ", size)   
-    print("2) 현재 capacity 변수의 값은 ? ", capacity)   
+    print("(초기값) 현재 size 변수의 값은 ? ", size)   
+    print("(초기값) 현재 capacity 변수의 값은 ? ", capacity)   
+    print("----------------------------------------------------")   
+
+    # insert함수 호출 1
     insert()
+    print("현재의 size 변수의 값은? ", size)         
+    print("현재의 size와 capacity의 값은 같은가?", isFull())         
+    print("----------------------------------------------------")   
+
+    # insert함수 호출 2
     insert()
-    insert()    
+    print("현재의 size 변수의 값은? ", size)         
+    print("현재의 size와 capacity의 값은 같은가?", isFull())         
+    print("----------------------------------------------------")   
+
+    # insert함수 호출 3
+    insert()
+    print("현재의 size 변수의 값은? ", size)         
+    print("현재의 size와 capacity의 값은 같은가?", isFull())         
+    print("----------------------------------------------------")   
+
+    # insert함수 호출 4
+    insert()
+    print("현재의 size 변수의 값은? ", size)         
+    print("현재의 size와 capacity의 값은 같은가?", isFull())         
+    print("----------------------------------------------------")   
+
+    # insert함수 호출 5
+    insert()
+    print("현재의 size 변수의 값은? ", size)         
+    print("현재의 size와 capacity의 값은 같은가?", isFull())         
+    print("----------------------------------------------------")   
+
+    # insert함수 호출 6
+    insert()
+    print("현재의 size 변수의 값은? ", size)         
+    print("현재의 size와 capacity의 값은 같은가?", isFull())         
+    print("----------------------------------------------------")   
+
+
+
